@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivannas Flowershop | Flores con el Corazón en Cancún</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-floral {
+            background-color: #fff9f9;
+        }
+        .text-gold {
+            color: #d4af37;
+        }
+        .bg-gold {
+            background-color: #d4af37;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+        .gradient-overlay {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+        }
+        .logo-nav {
+            height: 60px;
+            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+            background: #000;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .logo-hero {
+            max-width: 280px;
+            filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
+            background: #000;
+            padding: 15px;
+            border-radius: 20px;
+        }
+        .insta-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+        }
+        .profile-border {
+            border: 2px solid #d4af37;
+            padding: 10px;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="https://media.canva.com/v2/image-resize/format:JPG/height:800/quality:92/uri:ifs%3A%2F%2FM%2F7c2f7aed-54f4-42bc-bf43-6b2f525e1b89/watermark:F/width:800?csig=AAAAAAAAAAAAAAAAAAAAAEzGMf67s33rsTo8RXCTA7E4c5-jelxYRdnDASBKZTfB&exp=1776137333&osig=AAAAAAAAAAAAAAAAAAAAAO7vm0bNIzBLHkzJL7wGViYhfHDAYrdhhxXBe0cqppA6&signer=media-rpc&x-canva-quality=screen" alt="Ivannas Flowershop Logo" class="logo-nav">
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                    <a href="#inicio" class="hover:text-gold transition-colors">Inicio</a>
+                    <a href="#nosotros" class="hover:text-gold transition-colors">Nosotros</a>
+                    <a href="#florista" class="hover:text-gold transition-colors">La Florista</a>
+                    <a href="#galeria" class="hover:text-gold transition-colors">Galería</a>
+                    <a href="#contacto" class="bg-gold text-white px-6 py-2 rounded-full hover:bg-black transition-all">Pedir Ahora</a>
+                </div>
+                <div class="md:hidden text-gold text-2xl">
+                    <a href="https://wa.me/5219984957436"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://scontent-mia5-2.xx.fbcdn.net/v/t39.30808-6/473194949_122148743702353263_1412893004629304956_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeHMOB73OMMIvgUx1OPSntpUdSzwxIjXidV1LPDEiNeJ1YaTkqQZAP_pZBBqW2zPKvDk09UfPON5oXV0KLEAsyyW&_nc_ohc=hD78CioxZkcQ7kNvwGxl3ym&_nc_oc=AdqZ8gZIa0N5IjSfpyrWvB3RgRpyUCATQxAJQLbDefVF879uRx7FTEQlLOSDTtQHpQM&_nc_zt=23&_nc_ht=scontent-mia5-2.xx&_nc_gid=VmW1R_y6zL0xLWUsmBfgbg&_nc_ss=7a3a8&oh=00_Af3rkElFiK7h1JF29pFY1NTe18eddu-41x07MUzj7Wo0jg&oe=69E3584F" alt="Arreglo Buchón Rosas" class="w-full h-full object-cover">
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center">
+            <span class="text-white text-sm uppercase tracking-[0.4em] mb-4 block font-semibold">Cancún, Quintana Roo</span>
+            <h1 class="text-4xl md:text-6xl text-white font-bold mb-6 serif italic">Donde las flores se dan con el corazón 🪽</h1>
+            <p class="text-white/90 text-xl mb-10 font-light max-w-2xl leading-relaxed">Arreglos exclusivos para momentos inolvidables con calidad profesional diamante. 💎</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/5219984957436" class="bg-gold text-white px-10 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 shadow-lg shadow-gold/20">
+                    <i class="fab fa-whatsapp"></i> Ordenar por WhatsApp
+                </a>
+                <a href="#galeria" class="border border-white text-white px-10 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-all">
+                    Ver Galería Real
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section id="nosotros" class="py-24 bg-floral">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-16 serif text-gray-900">Nuestra Promesa de Calidad</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="hover-lift p-8 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gem text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Calidad Diamante</h3>
+                    <p class="text-gray-600 leading-relaxed">Seleccionamos cada tallo individualmente para asegurar que recibas solo lo mejor de la cosecha.</p>
+                </div>
+                <div class="hover-lift p-8 bg-white rounded-2xl shadow-sm border-2 border-gold/10">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-history text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">2 Años de Pasión</h3>
+                    <p class="text-gray-600 leading-relaxed">Consolidándonos como la opción preferida para momentos de lujo en Cancún.</p>
+                </div>
+                <div class="hover-lift p-8 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Atención Boutique</h3>
+                    <p class="text-gray-600 leading-relaxed">No somos una florería en serie; somos artesanos creando piezas únicas para ti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de la Florista -->
+    <section id="florista" class="py-24 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 relative">
+                    <div class="profile-border">
+                        <!-- Imagen de la Florista -->
+                        <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t51.75761-15/504123114_17893529490246883_6128914214506189430_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEs9OYUMNRTb7SNyBAcEilaZvF8UE9nwOZm8XxQT2fA5r7D_Ip5APncwZFh8hVxuHLiwJFo5JU6q_r27E-wiwEn&_nc_ohc=jSDPTZzcSXwQ7kNvwG6VNQk&_nc_oc=Adr9mVrAyZFEeGvRJmeDjJdzErtRg3EYsoqaARTqqoMyzTQypqLJRjszjipq5nrIpv0&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=dwtVSSaShhN-Mludzj0P5Q&_nc_ss=7a3a8&oh=00_Af3ZYolfxmIgoF5ydhxjuQv6NQ3MZtghuXHRH7z5HWI_xQ&oe=69E33738" alt="Florista Ivannas Flowershop" class="rounded-[1.5rem] w-full aspect-[4/5] object-cover shadow-2xl">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-gold text-white p-6 rounded-2xl shadow-xl hidden md:block">
+                        <p class="serif italic text-2xl font-bold">Arte en cada pétalo</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <span class="text-gold uppercase tracking-[0.3em] font-bold text-sm mb-4 block">El Rostro detrás de la Marca</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 serif italic text-gray-900 leading-tight">Pasión, Diseño y Corazón</h2>
+                    <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                        <p>
+                            Con más de dos años liderando la escena floral en Cancún, nuestra fundadora ha transformado la manera de regalar sentimientos. Su visión combina la elegancia del **diseño floral contemporáneo** con la calidez de un servicio profundamente personalizado.
+                        </p>
+                        <p>
+                            Especialista en arreglos de alta gama y "Ramos Buchones", su enfoque se centra en la **Calidad Diamante**: una selección rigurosa de flores de exportación que aseguran que cada entrega sea una obra maestra de frescura y estética.
+                        </p>
+                        <p class="italic text-gray-800 font-medium">
+                            "Mi misión no es solo entregar flores, sino crear el escenario perfecto para tus momentos más memorables. En Ivannas, cada diseño lleva un trozo de mi corazón."
+                        </p>
+                    </div>
+                    <div class="mt-10 flex items-center gap-4">
+                        <div class="h-[1px] w-12 bg-gold"></div>
+                        <p class="serif font-bold text-xl text-gray-900">Fundadora & Master Florist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Real (6 Imágenes) -->
+    <section id="galeria" class="py-24 bg-floral">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 serif text-gold italic">Nuestro Portafolio Real</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-gray-500 uppercase tracking-widest text-sm mb-4">Inspiración capturada de nuestro trabajo diario</p>
+                <a href="https://www.facebook.com/profile.php?id=61560597896825&sk=photos" target="_blank" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:underline transition-all">
+                    <i class="fab fa-facebook-square text-2xl"></i> Ver álbum completo en Facebook
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Foto 1: Ramo Buchón -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl aspect-square hover-lift">
+                    <img src="https://scontent-mia3-1.xx.fbcdn.net/v/t51.75761-15/491440629_17887612683246883_8417437579023325475_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeF6_GoxhdUSk5PCrv0uGq5lkjIQztHHC_WSMhDO0ccL9dRb6x-M0kAZMq-X0AQQjEhTsdZStGwALXwHML3PBXqH&_nc_ohc=BOIBcyWcfTwQ7kNvwEy9buX&_nc_oc=AdoJ2NORNf6VNyzOjMIjqgRuCMtjZyUJEgOl3fCpho1oy5kAHb8uSJCuvzog7QbBOgs&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=9rWjNMNEFK7n8U-i8v_cQQ&_nc_ss=7a3a8&oh=00_Af0OoQjfZYquWrDukNLYfw160iQUJod-Iz6qy3NdejQCcA&oe=69E3340D" alt="Ramo Buchón Gigante" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 insta-overlay flex flex-col justify-end p-8 text-white">
+                        <p class="text-xs uppercase tracking-widest opacity-80 mb-2">Más Vendido</p>
+                        <h3 class="text-2xl font-bold italic">Ramos Buchones</h3>
+                    </div>
+                </div>
+                
+                <!-- Foto 2: Girasoles -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl aspect-square hover-lift">
+                    <img src="https://i0.wp.com/floresrosadesaron.com/wp-content/uploads/2021/09/676b0bf0-b24f-48b8-861b-fe474ea18dd8.jpg?fit=1200%2C1600&ssl=1" alt="Arreglo de Girasoles" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 insta-overlay flex flex-col justify-end p-8 text-white">
+                        <p class="text-xs uppercase tracking-widest opacity-80 mb-2">Alegre Detalle</p>
+                        <h3 class="text-2xl font-bold italic">Cajas de Girasoles</h3>
+                    </div>
+                </div>
+                
+                <!-- Foto 3: Globos y Cumpleaños -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl aspect-square hover-lift">
+                    <img src="https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/616022762_122199370580353263_8103042695271373387_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG1OLAsDZG5sggkuRFhX2_3ItZHp3ueI7gi1kene54juGgXghJVB20ZmQgPi0X5f3SJ5PMs0Pribg-0JjIVfw1a&_nc_ohc=armOkyg1gLMQ7kNvwHvMn30&_nc_oc=AdoZF6xs6mrTbNaxZ5XPW_HpdhlyrEGMqeDjV9muC6uCrxsIGSby4vftUh_e_rnGoDo&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=cEz_S_EPAPSZeuK1c0foHA&_nc_ss=7a3a8&oh=00_Af0XXQQOnHRUOEt-ymvhokB6kW60buaLWk8A70ziYw89fQ&oe=69E36597" alt="Arreglo con Globos" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 insta-overlay flex flex-col justify-end p-8 text-white">
+                        <p class="text-xs uppercase tracking-widest opacity-80 mb-2">Celebraciones</p>
+                        <h3 class="text-2xl font-bold italic">Detalles con Globos</h3>
+                    </div>
+                </div>
+
+                <!-- Foto 4: Rosas Románticas -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl aspect-square hover-lift">
+                    <img src="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/659866220_122206151366353263_7474611103622684649_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHMFXsoirUiR6x_8G78g1MhfcKux31EBfd9wq7HfUQF95W1KmsGfIqJ2hzvuk8iX0lGbHRU3KQzl2uaNfTWTSyK&_nc_ohc=1H_R4ddH8a8Q7kNvwGNrMkC&_nc_oc=AdqPQv7tyKGCAFUVyHxWnYgRkk9pC3qrij3Ose-4lHBzq3LBhmhJPfAZLHMe18BHMN0&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=VUABjHpJHlbL1ZVnl_OJ7Q&_nc_ss=7a3a8&oh=00_Af2bY1-7wRJk0WcSjTrVdwhNgEZN0nhIPDNR1j6eXvwMpg&oe=69E34D3C" alt="Bouquet Romántico" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 insta-overlay flex flex-col justify-end p-8 text-white">
+                        <p class="text-xs uppercase tracking-widest opacity-80 mb-2">Elegancia</p>
+                        <h3 class="text-2xl font-bold italic">Arreglos Románticos</h3>
+                    </div>
+                </div>
+
+                <!-- Foto 5: Canastas Premium -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl aspect-square hover-lift">
+                    <img src="https://scontent-mia5-1.xx.fbcdn.net/v/t51.75761-15/475334936_17878099464246883_1298594145073990885_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHU055LaPSf0x1rCwTtFB7xdHgwYlY3c_l0eDBiVjdz-TW4Jun5-Q4Q6fMSjl-5GFQil0USPJwJ3yLCcB19zl4l&_nc_ohc=aB_snZzB5-UQ7kNvwGijlmr&_nc_oc=AdrbfSAwZd0YzzhqWeK5WpITaE9kL14g8n_5zTzlzWIzbXSWPQgMY27pDtJTHaf6Ujw&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=5UxFU0YDLFdFQlra3B-9TQ&_nc_ss=7a3a8&oh=00_Af2uNz4yNIm4JX820cSxC2rkHUyLvjm3DBZHbybYXk5sxA&oe=69E34734" alt="Canasta de Flores" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 insta-overlay flex flex-col justify-end p-8 text-white">
+                        <p class="text-xs uppercase tracking-widest opacity-80 mb-2">Exclusivo</p>
+                        <h3 class="text-2xl font-bold italic">Canastas Premium</h3>
+                    </div>
+                </div>
+
+                <!-- Foto 6: Rosas de Colores Especiales -->
+                <div class="group relative overflow-hidden rounded-3xl shadow-xl aspect-square hover-lift">
+                    <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t51.75761-15/494995014_17889220758246883_3525995628121454782_n.jpg?stp=dst-jpegr_tt6&_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEImB3h4nm1-3F9mArQhyunpdOiQVNJAySl06JBU0kDJE3eCgPq0tT9SSAthMTM5eVTPioJZ_MLyZBOCl6lq83N&_nc_ohc=2qiiUt25d6AQ7kNvwHYSSd8&_nc_oc=Adp8dIE_xxiLcGGDjvjA9mPeCs9sFNmEXBkyklj9TGxYf8FKPcrga8tH7RlAzO0I6mw&_nc_zt=23&se=-1&_nc_ht=scontent-mia3-2.xx&_nc_gid=gFb68-8zpJRY_ZSKsIWEVA&_nc_ss=7a3a8&oh=00_Af1Kyatj6rlh5czCSS74p02zcPAmZ0qMfHNy0r_X-7TxJA&oe=69E3677A" alt="Rosas de Colores" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 insta-overlay flex flex-col justify-end p-8 text-white">
+                        <p class="text-xs uppercase tracking-widest opacity-80 mb-2">Personalizado</p>
+                        <h3 class="text-2xl font-bold italic">Flores de Exportación</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-24 bg-gray-950 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="bg-black p-4 inline-block rounded-2xl border border-gold/30 mb-8">
+                        <img src="https://media.canva.com/v2/image-resize/format:JPG/height:800/quality:92/uri:ifs%3A%2F%2FM%2F7c2f7aed-54f4-42bc-bf43-6b2f525e1b89/watermark:F/width:800?csig=AAAAAAAAAAAAAAAAAAAAAEzGMf67s33rsTo8RXCTA7E4c5-jelxYRdnDASBKZTfB&exp=1776137333&osig=AAAAAAAAAAAAAAAAAAAAAO7vm0bNIzBLHkzJL7wGViYhfHDAYrdhhxXBe0cqppA6&signer=media-rpc&x-canva-quality=screen" alt="Ivannas Logo" class="h-20">
+                    </div>
+                    <h2 class="text-4xl font-bold mb-8 serif italic text-white">Hagamos algo inolvidable...</h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4 group">
+                            <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-black transition-all">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-xs uppercase tracking-widest">Atención en</p>
+                                <p class="text-white font-medium text-lg">Cancún, Quintana Roo.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 group">
+                            <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-black transition-all">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-xs uppercase tracking-widest">Horario de Entregas</p>
+                                <p class="text-white font-medium text-lg">9:00 AM - 7:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-[3rem] p-10 md:p-14 text-gray-900 shadow-2xl">
+                    <h3 class="text-3xl font-bold mb-4 text-center serif italic text-gray-950">Inicia tu pedido</h3>
+                    <p class="text-center text-gray-500 mb-10 leading-relaxed">Personaliza tu arreglo diamante directamente con nosotros.</p>
+                    
+                    <a href="https://wa.me/5219984957436" class="flex items-center justify-center gap-4 w-full bg-[#25D366] text-white py-6 rounded-2xl font-bold text-xl hover:scale-[1.03] transition-transform shadow-xl shadow-green-500/20">
+                        <i class="fab fa-whatsapp text-3xl"></i> Pedir por WhatsApp
+                    </a>
+                    
+                    <div class="mt-10 flex justify-center gap-10">
+                        <a href="https://www.facebook.com/profile.php?id=61560597896825" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors text-3xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ivannasflowershop/" target="_blank" class="text-gray-400 hover:text-pink-600 transition-colors text-3xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black text-center border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-gray-600 text-sm tracking-[0.3em] font-medium">IVANNAS FLOWERSHOP · CANCÚN · MÉXICO</p>
+            <p class="text-gray-800 text-[10px] mt-4 tracking-widest uppercase">Calidad y Profesionalismo Diamante</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5219984957436" class="fixed bottom-8 right-8 w-18 h-18 bg-[#25D366] text-white rounded-full flex items-center justify-center text-4xl shadow-[0_10px_30px_rgba(37,211,102,0.4)] z-[100] hover:scale-110 transition-transform p-4">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
